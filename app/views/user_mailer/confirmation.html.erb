@@ -1,0 +1,20 @@
+<h1>Welcome to Oulu Open Hack 2019!</h1>
+<p>
+  Your team <strong><%= @team_name %></strong> has been registered to join Oulu Open Hack.
+</p>
+<p>
+  Before getting started, please confirm your attendance by clicking the link below.
+</p>
+<p>
+  <a href="<%= user_confirm_url(token: @user.token)%>">Let’s do this, sign me up!</a>
+</p>
+<p>
+  You’ll receive more details by email shortly after your confirmation.
+</p>
+<p>
+  <small>
+    Oulu Open Hack 26.-27.04.2019<br>
+    Business Kitchen Tellus, University of Oulu<br>
+    ouluopenhack.org<br>
+  </small>
+</p>

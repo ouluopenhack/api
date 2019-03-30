@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+john:
+  name: John
+  email: john@localhost.localdomain
+  status: 10
+  team: team_one
+
+unconfirmed_betty:
+  name: "Betty"
+  email: "betty@localhost.localdomain"
+  status: 5
+  team: team_two
+
+unconfirmed_brad:
+  name: "Brad"
+  email: "brad@localhost.localdomain"
+  status: 5
+  team: team_two

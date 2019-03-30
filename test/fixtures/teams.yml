@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+team_one:
+  name: Team One
+  status: 10
+
+team_two:
+  name: Team Two
+  status: 5
