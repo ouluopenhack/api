@@ -1,16 +1,32 @@
 # OuluOpenHack API
 
-## New Team Registration
+Teams can register to OuluOpenHack via this API.
 
-  1. Send HTTP POST with team details [:name, members: [:email, :name] ]
-  2. Send confirmation emails to all members
-  3. Wait until everybody has clicked the confirmation link
-    - Show "confirmed but waiting for others" page
-  4. On last confirmation, show "Your team participation is confirmed" page
-  5. Send event invitations to all team members
-    - Team TOKEN
+API is running on https://api.ouluopenhack.org
 
-## Requirements
+## API documentation
+
+```POST /v1/teams```
+
+### Payload
+
+```
+{
+  name: "TEAM NAME",
+  users: [
+    { email: "first team member email", name: "first team member name" },
+    ...
+    ...
+    { email: "last team member email", name: "last team member name" },
+  ]
+}
+```
+
+
+## Installation
+
+run ```rails test``` to run tests.
 
 Development environment uses ```mailcatcher``` gem for receiving all emails. If you don't have it, install it by running ```gem install mailcatcher``` and run it
+
 
