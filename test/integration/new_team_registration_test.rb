@@ -11,8 +11,10 @@ class NewTeamRegistrationTest < ActionDispatch::IntegrationTest
 #  5. Send event invitations to all team members
 #    - Team TOKEN
   def confirmation_link
-    # user_confirm_url(token: "")
-    "http://localhost:5000/confirmations/"
+    # due to a bug(?) the named path is wrong when this url is created,
+    # solved by hardcoding the url
+
+    "http://localhost:5000/v1/confirmations/"
   end
   def default_request
     {
