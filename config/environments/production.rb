@@ -105,4 +105,17 @@ Rails.application.configure do
   # config.active_record.database_selector = { delay: 2.seconds }
   # config.active_record.database_resolver = ActiveRecord::Middleware::DatabaseSelector::Resolver
   # config.active_record.database_resolver_context = ActiveRecord::Middleware::DatabaseSelector::Resolver::Session
+
+    config.action_mailer.smtp_settings = {
+    :authentication => :plain,
+    :address => ENV["SMTP_HOST"],
+    :port => ENV["SMTP_PORT"],
+    :domain => ENV["SMTP_DOMAIN"],
+    :user_name => ENV["SMTP_USERNAME"],
+    :password => ENV["SMTP_PASSWORD"]
+  }
+
+
+
+
 end
