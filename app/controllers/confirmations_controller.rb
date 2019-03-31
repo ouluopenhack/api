@@ -8,7 +8,7 @@ class ConfirmationsController < ApplicationController
       if(user = User.find_by(token: params[:token], status: "pending"))
         user.confirm
 
-        redirect_to "https://www.ouluopenhack.org/confirmed"
+        redirect_to "https://www.ouluopenhack.org/confirmed.html"
       else
         render plain: "<marquee>o hai!</marquee>"
       end
