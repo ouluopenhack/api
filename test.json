@@ -1,0 +1,6 @@
+{"name":"Team unknown","users":[{"email":"sylvia@localhost.localdomain","name":"Sylvia"},{"email":"esther@localhost.localdomain","name":"Esther"},{"email":"hyacinth@localhost.localdomain","name":"Hyacinth Buckét"},{"email":"onslow@localhost.localdomain","name":"Onslow"}]}
+
+
+curl -X POST -H "Content-Type: application/json" \
+ -d '{"name":"Team Betatest","users":[{"email":"tuomasj@gmail.com","name":"Tuomas"},{"email":"marjaana.annala@gmail.com","name":"Marjaana"}]}' \
+ http://api.ouluopenhack.org/v1/teams
